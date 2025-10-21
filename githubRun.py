@@ -44,6 +44,7 @@ def loginGetCode(user, password):
         "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2"
     }
     r1 = requests.post(url, data=data, headers=headers, allow_redirects=False)
+    print(r1)
     location = r1.headers["Location"]
     print("成功获取Location")
     print(location)
