@@ -195,9 +195,11 @@ if __name__ == '__main__':
     user = sys.argv[1]
     password = sys.argv[2]
     pushplus_token = sys.argv[3]
-    print(user)
-    print(password)
-    print(pushplus_token)
+    print("输出内容")
+    print(user+"1")
+    print(password+"2")
+    print(pushplus_token+"3")
+    print("输出内容")
     ##刷步数
     res = main(user, password, 9000   , 12000)
     # 推送消息
