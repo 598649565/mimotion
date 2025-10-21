@@ -24,7 +24,6 @@ def loginGetCode(user, password):
     :param password: 密码
     :return: is_phone, location
     """
-
     is_phone = True
     if "@" in user:
         is_phone = False
@@ -196,6 +195,9 @@ if __name__ == '__main__':
     user = sys.argv[1]
     password = sys.argv[2]
     pushplus_token = sys.argv[3]
+    print(user)
+    print(password)
+    print(pushplus_token)
     ##刷步数
     res = main(user, password, 9000   , 12000)
     # 推送消息
